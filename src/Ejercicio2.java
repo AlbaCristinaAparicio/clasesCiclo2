@@ -1,3 +1,6 @@
+import java.io.OutputStreamWriter;
+import java.util.Scanner;
+
 public class Ejercicio2 {
     public static int numCifras (int numero){
         var cifras = 0;
@@ -11,7 +14,10 @@ public class Ejercicio2 {
 
 
     public static void main(String[] args) {
-        int numero = 154326;
+        var sc = new Scanner(System.in);
+
+        System.out.println("Introduce un numero entero: ");
+        int numero = sc.nextInt();
         System.out.println("El numero tiene "+numCifras(numero)+" cifras");
     }
     
